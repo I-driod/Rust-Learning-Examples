@@ -1,4 +1,5 @@
-
+// Lesson-one : About cargo,main src file,cargo.toml and running first program refrence to hello-world folder
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 /*
 Cargo is Rut's helper tool that makes starting, building, and running project easy.It's like a project manager that sets up your workplace and 
 handles task for you.
@@ -6,10 +7,11 @@ handles task for you.
 
 src/main.rs: this is where you ypur code.
 Cargo.toml: this is where you put your dependencies and description of your project.
-
-
 */
 
+
+//Lessson-two : Data-Types in rust I.
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 /*
 
@@ -26,13 +28,6 @@ Numbers,
  true, false
  -  characters
  char
-
- 
-
- 
-
-
-
 String,
 Array,
 Tuple,
@@ -40,6 +35,20 @@ Tuple,
 
 
 */
+//condition statment 
+
+/*
+
+> is grater than
+< is less than
+>= is grater than or equal to
+<= is less than or equal to
+== is equal to
+!= is not equal to
+*/
+
+
+
 
 
 
@@ -55,27 +64,10 @@ println!("Our result is {} {}", result, my_char)
 
 
 
-//return a square of a number of 
+//function that accept a number and check if that number is equal to five 
 fn is_grater(num: i32)  -> bool{
    num != 5
 }
-
-//function that accepts a number and divides the number by 2. print the result. 
-
-
-// fn multipl_two
-
-//condition statment 
-
-/*
-
-> is grater than
-< is less than
->= is grater than or equal to
-<= is less than or equal to
-== is equal to
-!= is not equal to
-*/
 
 
 
