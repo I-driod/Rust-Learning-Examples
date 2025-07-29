@@ -1,3 +1,4 @@
+//lesson-three : Data types in rust II.
 /*
 We will continue with data types.
 
@@ -20,8 +21,11 @@ u64	64 bits	0 to 18 quintillion (approx.)
 i128	128 bits	Really huge negative to positive numbers
 u128	128 bits	0 to really huge positive numbers
 
+*/
 
-String Slice: (&str) String ref, it's immutable (it can't chnage). 
+ 
+// String and String slice
+/*  String Slice: (&str) String ref, it's immutable (it can't chnage). 
 let name: &str = "your name";
 
 
@@ -32,10 +36,10 @@ let mut last_name: String = String::from("your last name");
 Brrowing lets you acess data without taking ownership. 
 
 Immutable Brrowing (&): read only ability.
-Mutable Brrowing (&mut): read and edit ability.
+Mutable Brrowing (&mut): read and edit ability.*/
 
 
-*/
+
 
 
 
@@ -46,25 +50,18 @@ Mutable Brrowing (&mut): read and edit ability.
 /// -------------///
 
 fn main() {
+//Classwork.
+//^^^^^^^^^
 //crate an array of your fav sport 
 //write a function that aceepts this array and print it.
 
-
-
-
-
-
-
+//classwork Answers.
     let nombres = ["Karate", "powerlifting", "Football"];
     print_names(&nombres);
     
 
-
-
-
-
-
-
+//Lesson-four : cloning in rust.
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 // let miracle_car: String = String::from("Miracle Toyota Camary");
 
@@ -73,6 +70,8 @@ fn main() {
 // println!("victor driving: {}", victor);
 
 
+//Mutable Borrowing in Rust.
+//^^^^^^^^^^^^^^^^^^^^^^^^^
 
 // let mut get_rusty: String = String::from("Get Rusty");
 // let victor: &String = &get_rusty;
@@ -86,32 +85,17 @@ fn main() {
 
 
 // println!("updated rusty: {}, original book: {}", victor_write, get_rusty);
-
-
-// let fruits: [&str; 3] = ["Orange", "banana", "Apple"];
-// let victor_fruits: &_ = &fruits[1..3];
-
-// println!("victor's fruits: {:#?}", victor_fruits)
-
-
-
-
 // victor.push_str("string");
 
 
 
 
+//Revision on String and Static String 
 // let name: &'static str = "Godwin";
-// // name.pus
 // let mut full_name: String = String::from("Godwin");
 // full_name.push_str(" David");
 
 // println!("name: {}", full_name);
-
-
-    // let number: u32 = -18;
-
-    // println!("my number {}", number)
 
 // let name: = "Godwin David";
 
@@ -129,19 +113,22 @@ fn main() {
 
 
 
+
+//Arrays in rust.
+
+// let fruits: [&str; 3] = ["Orange", "banana", "Apple"];
+// let victor_fruits: &_ = &fruits[1..3];
+
+// println!("victor's fruits: {:#?}", victor_fruits)
 }
 
 
 
+//Classwork Answers
 fn print_names(nombres: &[&str]) {
     println!("Listof name: {:?}", nombres);
     println!("sport 1: {}", nombres[0]);
     println!("Sport 2: {}", nombres[1]);
     println!("Sport 3: {}", nombres[2]);
 }
-
-
-// fn print_name (name: String){
-//     println!("name: {}", name);
-// }
 
